@@ -10,4 +10,6 @@ object Constants {
 
     const val BORUTO_DATABASE = "boruto_database"
 
+    const val ON_BOARDING_PAGE_COUNT = 3
+
 }
