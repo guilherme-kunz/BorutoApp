@@ -23,6 +23,7 @@ import com.google.accompanist.pager.*
 import com.guilhermekunz.borutoapp.R
 import com.guilhermekunz.borutoapp.domain.model.OnBoardingPage
 import com.guilhermekunz.borutoapp.ui.theme.*
+import com.guilhermekunz.borutoapp.util.Constants.LAST_ON_BOARDING_PAGE
 import com.guilhermekunz.borutoapp.util.Constants.ON_BOARDING_PAGE_COUNT
 
 @ExperimentalAnimationApi
@@ -85,7 +86,7 @@ fun FinishButton(
         AnimatedVisibility(
             modifier = Modifier
                 .fillMaxWidth(),
-            visible = pagerState.currentPage == 2
+            visible = pagerState.currentPage == LAST_ON_BOARDING_PAGE
         ) {
             Button(
                 onClick = onClick,
