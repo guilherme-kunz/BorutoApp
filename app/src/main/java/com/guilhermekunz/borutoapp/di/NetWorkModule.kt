@@ -18,7 +18,7 @@ import javax.inject.Singleton
 @ExperimentalSerializationApi
 @Module
 @InstallIn(SingletonComponent::class)
-class NetWorkModule {
+object NetWorkModule {
 
     @Provides
     @Singleton
